@@ -161,7 +161,7 @@ aside > h2 {
 .social
 {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .nav
@@ -210,6 +210,21 @@ aside > h2 {
   padding: 0.33147rem 0;
   border-bottom: 3px solid #328cc7;
 } 
+
+/*--------License---------------*/
+.license a {
+	color: white;
+}
+
+.license-text {
+	color: white;
+	background-color: #328cc7;
+}
+
+.license-text:hover {
+	text-decoration: none;
+	background-color: #2980b9;
+}
 
 /*--------Categories------------*/
 .categories-bar {
@@ -271,6 +286,10 @@ aside > h2 {
     width: 50px;
     margin: 10px auto;
   }
+
+	.social {
+		margin-top: 40px;
+	}
 }
 
 img {
