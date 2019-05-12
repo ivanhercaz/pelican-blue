@@ -128,7 +128,7 @@ a:hover { text-decoration: underline; }
 /* Sidebar */
 aside {
   font-size: 14px;
-  width: 220px; height: 100%;
+  width: 20%; height: 100%;
   position: fixed;
   top: 0; left: 0;
   padding: 30px;
@@ -136,8 +136,9 @@ aside {
   color: white;
   box-shadow: 0 0 3px black;
   text-align: center;
-  padding-top: 8%;
+  padding-top: 4%;
   background-size: cover;
+	z-index: 1
 }
 
 aside > ul {
@@ -241,8 +242,8 @@ aside > h2 {
 	overflow: hidden;
 	background-color: #2980b9;
 	position: fixed;
-	top: 0;
-	width: 100%;
+	top: 0; left: 24%;
+	width: 76%;
 	text-align: center;
 }
 
@@ -277,7 +278,12 @@ aside > h2 {
     margin-left: 0;
     margin-right: 0;
   }
-
+	
+	.categories-bar {
+		width: 100%;
+		left: 0;
+	}
+	
   body > article {
     margin: 0 auto;
     padding-top: 5px;
