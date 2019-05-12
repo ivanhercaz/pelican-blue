@@ -212,6 +212,27 @@ aside > h2 {
   border-bottom: 3px solid #328cc7;
 } 
 
+/*--------Categories------------*/
+.categories-bar {
+	overflow: hidden;
+	background-color: #2980b9;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.categories-bar a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.categories-bar a:hover {
+	background-color: #328cc7;
+}
 
 /*--------Responsive------------*/
 

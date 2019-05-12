@@ -97,16 +97,6 @@
         {% endif %}
     </p>
 
-    {% if DISPLAY_CATEGORIES_ON_MENU and categories %}
-        <h2>Categories</h2>
-        <ul class="navbar">
-            {% for cat, null in categories %}
-                <li{% if cat == category %} class="active"{% endif %}><a
-                        href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-
     {% if LINKS %}
         <h2 class="blog_roll_link"><br/>BLOGROLLS</h2>
         <ul class="navbar">
@@ -117,6 +107,14 @@
     {% endif %}
 
 </aside>
+
+{% if DISPLAY_CATEGORIES_ON_MENU and categories %}
+	<nav class="categories-bar">
+		{% for cat, null in categories %}
+			<a href="{{ SITEURL }}/{{ cat.url }}"{% if cat == category %} class="active"{% endif %}>{{ cat }}</a></li>
+    {% endfor %}
+	</nav>
+{% endif %}
 
 <!-- Content -->
 <article>
