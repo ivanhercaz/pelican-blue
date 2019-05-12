@@ -30,6 +30,16 @@ h1, h2 {
   border-bottom: 1px solid #eee;
 }
 
+main {
+	display: block;
+	float: right;
+	width: 76%;
+}
+
+main section {
+	margin-top: 15px;
+}
+
 .post_detail
 {
   font-size: 2em;
@@ -72,7 +82,7 @@ article section .blog-post
 
 /* Body */
 body {margin: 0}
-body > article, footer {
+body > article {
   line-height: 1.6em;
   display: block;
   max-width: 700px;
@@ -138,7 +148,7 @@ aside {
   text-align: center;
   padding-top: 4%;
   background-size: cover;
-	z-index: 1
+	z-index: 1;
 }
 
 aside > ul {
@@ -241,9 +251,7 @@ aside > h2 {
 .categories-bar {
 	overflow: hidden;
 	background-color: #2980b9;
-	position: fixed;
-	top: 0; left: 24%;
-	width: 76%;
+	width: 100%;
 	text-align: center;
 }
 
@@ -257,6 +265,13 @@ aside > h2 {
 
 .categories-bar a:hover {
 	background-color: #328cc7;
+}
+
+footer {
+	width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
 }
 
 /*--------Responsive------------*/
@@ -278,10 +293,9 @@ aside > h2 {
     margin-left: 0;
     margin-right: 0;
   }
-	
-	.categories-bar {
+
+	main {
 		width: 100%;
-		left: 0;
 	}
 	
   body > article {
@@ -295,13 +309,17 @@ aside > h2 {
     padding: 1em;
     margin-left: 1em;
     margin-top: 0;
-  }
+	}
 
-  #avatar {
+	#avatar {
     height: 50px;
     width: 50px;
     margin: 10px auto;
   }
+
+	.license {
+		padding-bottom: 10px;
+	}
 
 	.social {
 		margin-top: 40px;
