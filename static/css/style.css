@@ -60,6 +60,16 @@ article section .blog-post
 	text-align: justify;
 }
 
+.blog-page h1 {
+	text-align: center;
+	counter-reset: numberingHeader;
+}
+
+.blog-page h2:before {
+	content: counter(numberingHeader) ". ";
+	counter-increment: numberingHeader;
+}
+
 /* Body */
 body {margin: 0}
 body > article, footer {
